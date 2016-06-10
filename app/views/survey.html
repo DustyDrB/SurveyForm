@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+  	  <form action="/survey" method="post">
+  	    <label>
+  	    Your Name:
+  	  	<input type="text" name="name">
+  	  	</label>
+  	  	<label>
+  	  	Dojo Location:
+  	  	<select name="location">
+    	  <option value="battery">Battery Park</option>
+    	  <option value="palms">Isle of Palms</option>
+    	</select>
+    	</label>
+    	<label>
+    	Favorite Language:
+  	  	<select name="language">
+    	  <option value="javascript">Javascript</option>
+    	  <option value="sql">SQL</option>
+    	  <option value="html">HTML</option>
+    	</select>
+    	</label>
+    	<label>
+    	  Comment:
+    	  <textarea name="comment"></textarea>
+    	</label>
+    	<input type="submit" name="submit" value="Submit">
+  	  </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="counter">
+        <p>Thanks for submitting this form! You have submitted this form {{ session['count'] }} times now.</p>
+      </div>
+  	  <h3>Submitted Information</h3>
+      <p>Name: {{ session['name'] }}</p>
+      <p>Dojo Location: {{ session['location'] }}</p>
+      <p>Favorite Language: {{ session['language'] }}</p>
+      <p>Comment: {{ session['comment'] }}</p>
+    </div>
+  </body>
+</html>

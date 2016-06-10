@@ -1,3 +1,6 @@
 * {
   font-family: monaco;
 }
+input, select, textarea {
+	display: block;
+}
